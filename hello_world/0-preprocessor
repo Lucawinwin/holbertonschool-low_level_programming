@@ -1,2 +1,3 @@
 #!/bin/bash
-gcc -Wall programme.c -o programme
+gcc -E "$CFILE" -o c
+
