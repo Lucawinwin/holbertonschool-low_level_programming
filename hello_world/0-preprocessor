@@ -1,2 +1,2 @@
 #!/bin/bash
-./preprocess.sh fichier_source.c fichier_sortie.i
+gcc -Wall programme.c -o programme
