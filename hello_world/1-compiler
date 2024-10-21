@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -o hello_world hello_world.c  
+gcc -wall -c $CFILE -o main.c   
