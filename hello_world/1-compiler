@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -wall -c $CFILE -o main.c   
+gcc -c "$CFILE" -o "${BASENAME}.o"   
