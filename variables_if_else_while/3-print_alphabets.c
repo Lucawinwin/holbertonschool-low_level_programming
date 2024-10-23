@@ -1,5 +1,5 @@
 #include <unistd.h>
-
+#include <stdio.h>
 /**
  * main - imprime l'alphabet en minuscules et en majuscules
  *
