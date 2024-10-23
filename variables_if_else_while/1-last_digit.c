@@ -4,25 +4,25 @@
 
 int main(void)
 {
-    int n;
+int n;
 
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
 
-    /* Votre code commence ici */
-    if (n > 0)
-    {
-        printf("%d est positif\n", n);
-    }
-    else if (n == 0)
-    {
-        printf("%d est zéro\n", n);
-    }
-    else
-    {
-        printf("%d est négatif\n", n);
-    }
-    /* Votre code se termine ici */
+/* Votre code commence ici */
+if (n > 0)
+{
+printf("%d est positif\n", n);
+}
+else if (n == 0)
+{
+printf("%d est zéro\n", n);
+}
+else
+{
+printf("%d est négatif\n", n);
+}
+/* Votre code se termine ici */
 
-    return (0);
+return (0);
 }
