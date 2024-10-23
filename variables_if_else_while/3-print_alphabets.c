@@ -1,31 +1,20 @@
 #include <unistd.h>
 
 /**
- * main - prints the alphabet in lowercase and uppercase
+ * main - imprime l'alphabet en minuscules et en majuscules
  *
- * Return: Always 0 (Success)
+ * Return: Toujours 0 (Succès)
  */
 int main(void)
 {
-char lowercase = 'a';
-char uppercase = 'A';
+char letter;
 
-/* Print lowercase alphabet */
-while (lowercase <= 'z')
-{
-putchar(lowercase);
-lowercase++;
+for (letter = 'a'; letter <= 'z'; letter++)
+putchar(letter);
+
+for (letter = 'A'; letter <= 'Z'; letter++)
+putchar(letter);
+
+putchar('\n');
+return (0);
 }
-
-/* Print uppercase alphabet */
-while (uppercase <= 'Z')
-{
-putchar(uppercase);
-uppercase++;
-}
-
-putchar('\n'); /* Print a newline */
-
-return (0); /* Return success */
-}
-
