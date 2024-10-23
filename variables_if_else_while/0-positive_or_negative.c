@@ -1,25 +1,33 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
  * main - entry point
  *
- * Return always 0 (Sucess)
+ * Return: always 0 (Sucess)
+ */
+int main(void)
+{
+    int n;
 
-int main() {
-    srand(time(NULL)); // Initialiser le générateur de nombres aléatoires
-    int n = rand() % (RAND_MAX + 1) - (RAND_MAX / 2); // Générer un nombre aléatoire entre -RAND_MAX/2 et RAND_MAX/2
+    srand(time(0));
+    n = rand() - RAND_MAX / 2;
 
-    // Complétez le code ci-dessous
-    printf("Le nombre est : %d\n", n);
-    if (n > 0) {
-        printf("est positif\n");
-    } else if (n == 0) {
-        printf("est zéro\n");
-    } else {
-        printf("est négatif\n");
+    /* Your code starts here */
+    if (n > 0)
+    {
+        printf("%d is positive\n", n);
     }
+    else if (n == 0)
+    {
+        printf("%d is zero\n", n);
+    }
+    else
+    {
+        printf("%d is negative\n", n);
+    }
+    /* Your code ends here */
 
-    return 0;
+    return (0);
 }
