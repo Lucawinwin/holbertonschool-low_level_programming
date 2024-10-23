@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - imprime l'alphababet à l'envers 
+ * main - imprime l'alphababet à l'envers
  *
  * Return: Toujours 0 (Sucess)
  */
