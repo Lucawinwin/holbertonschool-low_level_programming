@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
+#include <stdio.h>  
 
+/* betty style doc for function main goes there */
 int main(void)
 {
 int n;
@@ -9,7 +10,7 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-/* Votre code commence ici */
+/* votre code commence ici */
 if (n > 0)
 {
 printf("%d est positif\n", n);
@@ -22,7 +23,7 @@ else
 {
 printf("%d est négatif\n", n);
 }
-/* Votre code se termine ici */
+/* votre code se termine ici */
 
 return (0);
 }
