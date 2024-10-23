@@ -13,7 +13,7 @@ for (letter = 'a'; letter <= 'z'; letter++)
 {
 putchar(letter);
 }
-putchar('\n');
+putchar('abcdefghijklmnopqrstuvwxyz');
 
 return (0);
 }
