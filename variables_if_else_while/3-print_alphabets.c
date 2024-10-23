@@ -1,13 +1,31 @@
-#include <stdio.h>
+#include <unistd.h>
 
+/**
+ * main - prints the alphabet in lowercase and uppercase
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-char ch;
+char lowercase = 'a';
+char uppercase = 'A';
 
-for (ch = 'a'; ch <= 'z'; ch++)
-putchar(ch);
-for (ch = 'A'; ch <= 'Z'; ch++)
-putchar(ch);
-putchar('\n');
-return 0;
+/* Print lowercase alphabet */
+while (lowercase <= 'z')
+{
+putchar(lowercase);
+lowercase++;
 }
+
+/* Print uppercase alphabet */
+while (uppercase <= 'Z')
+{
+putchar(uppercase);
+uppercase++;
+}
+
+putchar('\n'); /* Print a newline */
+
+return (0); /* Return success */
+}
+
