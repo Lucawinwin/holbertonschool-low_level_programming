@@ -4,7 +4,7 @@
 
 int main(void)
 {
-int:(int a, int b) 
+int:(int a, int b)
 }
 srand(time(0));
 n = rand() - RAND_MAX / 2;
