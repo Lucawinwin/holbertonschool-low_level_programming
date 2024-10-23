@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - imprime l'alphabet en minuscules 
+ * main - imprime l'alphabet en minuscules
  *
  * Return: Toujours 0 (Sucess)
  */
@@ -19,4 +19,3 @@ putchar(letter);
 putchar('\n');
 return (0);
 }
-
