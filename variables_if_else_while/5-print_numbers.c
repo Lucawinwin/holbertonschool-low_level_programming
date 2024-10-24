@@ -1,6 +1,13 @@
-def main():
-for i in range( 10 ):
-print( i )
+#include <unistd.h>
 
-if __name__ == " __main__" :
-main()
+int main() {
+int i;
+
+for (i = 0; i < 10; i++) {
+	:
+putchar(i + '0'); // Print the digit
+}
+    
+putchar('\n'); // Print newline at the end
+return 0;
+}
