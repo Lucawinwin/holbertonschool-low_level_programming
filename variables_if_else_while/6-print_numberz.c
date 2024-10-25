@@ -1,13 +1,17 @@
+#include <stdio.h>
 #include <unistd.h>
+/**
+ *main- rend et imprime
+ *les lettres de A a Z
+ *Return: always 0 (sucess)
+ */
+int main(void)
+{
+char ab = '0';
 
-int main() {
-    int i = 0;
+for (ab = '0'; ab <= '9'; ab++)
+putchar(ab);
+putchar('\n');
 
-    while (i < 10) {
-        putchar(i + '0'); // Print the digit
-        i++;
-    }
-    
-    putchar('\n'); // Print newline at the end
-		   // return 0;
+return (0);
 }
