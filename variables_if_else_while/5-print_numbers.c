@@ -1,13 +1,19 @@
-#include <unistd.h>
+#include <stdio.h>
 
-int main() {
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
 int i;
 
-for (i = 0; i < 10; i++) {
-	:
-putchar(i + '0'); // Print the digit
+for (i = 0; i < 10; i++)
+{
+putchar(i + '0');
 }
-    
-putchar('\n'); // Print newline at the end
-return 0;
+putchar('\n');
+
+return (0);
 }
