@@ -1,10 +1,18 @@
-#include <unistd.h>
-
-int main(void) {
-char str[] = "_putchar";
-write(1, str, 8);  // Écrit la chaîne sur la sortie standard (descripteur de fichier 1)
-write(1, "\n", 1); // Écrit un caractère de nouvelle ligne
-
-return 0;
+#include "main.h"
+/**
+ * main - Prints  followed by a new line.
+ * Return: Always 0.
+*/
+int main(void)
+{
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+	return (0);
 }
-
