@@ -11,4 +11,3 @@ int main() {
     printf("Après : %d\n", value); 
     return 0;
 }
-
