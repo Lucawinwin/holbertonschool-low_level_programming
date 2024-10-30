@@ -1,12 +1,13 @@
-#include <stdio.h>
+#include "main.h"
 
-int main (void) {
-
-int a = 98
-printf ( "valeur initiale : %d\n",98);
-
-int b = 42
-printf ("Valeur après changement : %d\n", 42);
-
-return (0),
+/**
+ * swap_int - Swaps the values of two integers.
+ * @a: The first integer to be swapped.
+ * @b: The second integer to be swapped.
+ */
+void swap_int(int *a, int *b)
+{
+	int tmp = *a;
+	*a = *b;
+	*b = tmp;
 }
