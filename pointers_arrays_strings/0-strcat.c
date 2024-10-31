@@ -1,27 +1,27 @@
-#include <stdio.h>
+#include "main.h"
 
-char *ma_strcat(char *dest, const char *src) {
+/**
+ * _strcat - contenir deux strings
+ * @dest: imput value
+ * @src: input value
+ * Return: void
+ */
+char *_stracat(char *dest, char *src)
+{
+int i;
+int j;
 
-while (*dest) {
-dest++;  
+i = 0;
+while (dest[i] != '\0')
+{
+i++;
+}
+j = 0;
+while (src[j] != '\0')
+dest[i] = src [j];
+j++;
+j++;
 }
 
-
-while (*src) {
-*dest++ = *src++;  
-}
-
-*dest = '\0';  
-return dest;   
-}
-
-int main() {
-char dest[100] = "Bonjour, ";  
-char src[] = "monde!";
-
-ma_strcat(dest, src);
-printf("%s\n", dest);  
-
-return 0;
-}
-
+dest [i] = '\0';
+return (dest);
