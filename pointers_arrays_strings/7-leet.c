@@ -22,4 +22,4 @@ char *leet(char *c)
 	}
 
 	return (cp);
-
+}
