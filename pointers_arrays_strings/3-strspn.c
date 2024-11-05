@@ -1,15 +1,23 @@
-#include <stdio.h>
-#include <string.h>
+#include "main.h"
 
-int main(void)
+unsigned int _strspn(char *s, char *accept)
 {
-int len;
-const char str1[] = "hello world";
-const char str2[] = "oleh";
+	unsigned int bytes = 0;
+	int i;
 
-len = strspn(str1, str2);
-
-printf("Length of initial segment matching %d\n", len);
-
-return (0);
+	while (*s)
+	{
+		for (i = 0; accept[i]; i++)
+		{
+			if (accept[i] == *s)
+			{
+				bytes++;
+				break;
+			}
+			else if ((accept[i + 1]) == '\0')
+				return (bytes);
+		}
+		s++;
+	}
+	return (bytes);
 }
