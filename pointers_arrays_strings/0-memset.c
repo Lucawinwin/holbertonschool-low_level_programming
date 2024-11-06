@@ -17,10 +17,10 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-    while (n--)
-    {
-        *s = b;  // Remplir l'octet à l'adresse mémoire actuelle.
-        s++;      // Déplacer le pointeur vers l'octet suivant.
-    }
-    return s;
+	while (n)
+	{
+		s[n - 1] = b;
+		n--;
+	}
+	return (s);
 }
