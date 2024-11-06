@@ -1,26 +1,18 @@
-/*
- * File: 0-memset.c
- * Auth: not
- */
-
-#include "main.h"
-
+#include"main.h"
+#include <stdio.h>
 /**
-*_memset - The _memset() function fills
-* the first n bytes of the memory area
-* pointed to by s with the constant byte b
-*@s:target
-*@b: constant byte
-*@n:number of byte
-*Return: returns new value of target
-*/
-
+ * *_memset-Cette fonction permet de remplir une zone mémoir
+ *@s: zone memoire a remplir
+ *@b: utiliser pour remplir la memoire
+ *@n: le nombre d’octet pour remplir la memoire
+ * Return: s.
+ */
 char *_memset(char *s, char b, unsigned int n)
 {
-	while (n)
-	{
-		s[n - 1] = b;
-		n--;
-	}
-	return (s);
+        unsigned int i;
+        for (i = 0; i < n; i++)
+        {
+                s[i] = b;
+        }
+        return (s);
 }
