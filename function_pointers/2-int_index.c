@@ -1,26 +1,30 @@
-#include"function_pointers.h"
+#include "function_pointers.h"
 
-int int_index(int *array, int size, int (*cmp)(int));
+/**
+*int_index - searches for an integer
+*@array: Array containing elements
+*@size: number of elements in array
+*@cmp: function which compare values
+*
+*Return: returns -1 if no element match
+* or when size is less than zero
+*return pointer to the first corresponding element
+*
+*/
+
+int int_index(int *array, int size, int (*cmp)(int))
 {
-int recherche(int array[20], int taille, int valeur_recherchee); 
+int index = 0;
+
+if (array == NULL || cmp == NULL)
+return (-1);
+
+for (; index < size; index++)
 {
-    for (int i = 0; i < taille; i++) {
-        if (array[20] == valeur_recherchee) {
-            return i;
-       }
-    }
-    return -1;
+if (cmp(array[index]) != 0)
+return (index);
 }
-int main() {
-    int array[20] = {0, -98, 98, 402, 1024, 4096, -1024, -98, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 98};
-    int valeur_recherchee = 98;
 
-    int index = recherche(array, 20, valeur_recherchee);
-    if (index != -1) {
-        printf("L'entier %d se trouve à l'indice %d.\n", valeur_recherchee, index);
-    } else {
-        printf("L'entier %d n'a pas été trouvé dans le tableau.\n", valeur_recherchee);
-    }
+return (-1);
 
-    return 0;
 }
